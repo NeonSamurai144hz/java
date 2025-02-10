@@ -1,5 +1,5 @@
 public class ex1 {
-    public static void main(String[] args) throws Exception {
-       System.out.println("Hello, World!");
+    public static void afficher(String[] args) throws Exception {
+       //  My java Code Forever
     }
 }
