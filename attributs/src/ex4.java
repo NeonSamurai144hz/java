@@ -1,7 +1,7 @@
-public class ex4 {
+public class ex4 { 
 
     public static class Compte {
-        
+
         private static int nombreDeComptes = 0;
 
         public Compte() {

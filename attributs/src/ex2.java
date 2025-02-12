@@ -1,4 +1,4 @@
-import ex2.Etudiant; // Import the class from the "ex2" folder
+import ex2.Etudiant;
 
 public class ex2 {
     public static void main(String[] args) {

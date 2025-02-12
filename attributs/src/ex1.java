@@ -1,11 +1,11 @@
 public class ex1 {
     public static void main(String[] args) {
-        livre p = new livre();
+        Livre p = new Livre();
         p.setTitle("Alice in the Wonderland");
         System.out.println(p.getTitle());
     }
 
-    public static class livre {
+    public static class Livre {
         private String titre;
         
         // Getter pour nom
