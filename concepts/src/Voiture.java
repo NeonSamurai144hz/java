@@ -1,5 +1,5 @@
 public class Voiture {
-    // Private attributes
+    // Private attributes for encapsulation
     private double prix;
     private String modele;
     private String couleur;
@@ -8,49 +8,49 @@ public class Voiture {
     public Voiture(String modele, String couleur, double prix) {
         this.modele = modele;
         this.couleur = couleur;
-        setPrix(prix);  // Use the setter to ensure the price is positive
+        setPrice(prix); // Use the setter to apply the "positive only" rule
     }
 
-    // Getter for prix
-    public double getPrix() {
+    // Getter for 'prix'
+    public double getPrice() {
         return prix;
     }
 
-    // Setter for prix with a check for positive values
-    public void setPrix(double prix) {
-        if (prix > 0) {
-            this.prix = prix;
-        } else {
-            System.out.println("Erreur: Le prix doit être positif.");
-        }
+    // Setter for 'prix' without conditions:
+    // This method only updates the price if 'newPrix' is positive.
+    public void setPrice(double newPrix) {
+        double f = (newPrix + Math.abs(newPrix)) / 2; // f equals newPrix if newPrix > 0, else 0
+        // If f > 0, Math.signum(f) returns 1 and the new price is f.
+        // If f is 0, Math.signum(0) returns 0 and the price remains unchanged.
+        this.prix = f + (this.prix * (1 - Math.signum(f)));
     }
 
-    // Getter for modele
-    public String getModele() {
+    // Getter for 'modele'
+    public String getModel() {
         return modele;
     }
 
-    // Setter for modele
-    public void setModele(String modele) {
+    // Setter for 'modele'
+    public void setModel(String modele) {
         this.modele = modele;
     }
 
-    // Getter for couleur
+    // Getter for 'couleur'
     public String getCouleur() {
         return couleur;
     }
 
-    // Setter for couleur
+    // Setter for 'couleur'
     public void setCouleur(String couleur) {
         this.couleur = couleur;
     }
 
-    // Method to display the car's details
+    // Method to display car details
     public void afficherDetails() {
         System.out.println("Modèle: " + modele + ", Couleur: " + couleur + ", Prix: " + prix);
     }
-
 }
+
 
 
 

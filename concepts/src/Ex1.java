@@ -21,3 +21,5 @@ public class Ex1 {
         ((Reptile) serpent).ramper();
     }
 }
+
+// Files attached Animal, Mammifere, Oiseau, Reptile
