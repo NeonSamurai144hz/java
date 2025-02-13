@@ -1,15 +1,16 @@
 public class Ex4 {
     public static void main(String[] args) {
         Forme rectangle = new Rectangle( /* largeur */ 5, /* hauteur */ 10);
-        rectangle.calculerSurface(); // Affiche "L'animal fait du bruit"
+        rectangle.calculerSurface(); // Calcule la surface d'un rectangle
 
         Forme cercle = new Cercle(3.14 /* rayon */);
-        cercle.calculerSurface(); // Affiche "L'animal fait du bruit"
+        cercle.calculerSurface(); // Calcule la surface d'un cercle
 
         System.out.println("Surface du rectangle : " + rectangle.calculerSurface());
         System.out.println("Surface du cercle : " + cercle.calculerSurface());
     }
 }
+
 // Forme, Cercle, Rectangle
 
 

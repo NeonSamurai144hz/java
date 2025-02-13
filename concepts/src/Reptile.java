@@ -9,7 +9,6 @@ public class Reptile extends Animal {
         System.out.println("Le reptile " + nom + " se déplace en rampant.");
     }
     
-    // Méthode spécifique aux reptiles
     public void ramper() {
         System.out.println("Le reptile " + nom + " rampe.");
     }

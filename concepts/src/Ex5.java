@@ -4,10 +4,10 @@ public class Ex5 {
         Avion A380 = new AvionDeTransport();
         PorteAvion porteAvion = new PorteAvion();
 
-        porteAvion.addAvion(S14);
+        porteAvion.addAvion(S14); // on intialisee les avions
         porteAvion.addAvion(A380);
 
-        System.out.println(porteAvion.avion.get(0).decoller());
+        System.out.println(porteAvion.avion.get(0).decoller()); // on fait decoller un des avions
     }
 }
 

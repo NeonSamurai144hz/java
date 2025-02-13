@@ -1,7 +1,7 @@
 public class Employe {
 
     public void travailler() {
-        System.out.println("Je bosse");
+        System.out.println("Je bosse\n");
     }
 
 }

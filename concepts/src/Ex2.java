@@ -1,18 +1,18 @@
 public class Ex2 {
     public static void main(String[] args) {
-        // Create an instance of Voiture
+            // Creer une voiture avec les attributs modele, couleur, prix
         Voiture v = new Voiture("Toyota", "Rouge", 25000);
-        v.afficherDetails();  // Should display: Modèle: Toyota, Couleur: Rouge, Prix: 25000.0
+        v.afficherDetails();
 
-        // Try to set a negative price; since negative values are not allowed, the price remains unchanged.
+            // On essayer de modifier le prix avec une valeur négative pour voir si la validation fonctionne
         double oldPrice = v.getPrice();
         v.setPrice(-5000);
         v.afficherDetails();
         System.out.println("Old price was: " + oldPrice + ", after trying negative, price is: " + v.getPrice());
 
-        // Now update with a positive price
+            // on essaie de modifier le prix pour une autre valeur positive pour voir si la validation fonctionne
         v.setPrice(30000);
-        v.afficherDetails();  // Should update the price to 30000.
+        v.afficherDetails();
     }
 }
 // Files attached Voiture

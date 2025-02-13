@@ -1,8 +1,8 @@
 public class Ex6 {
     public static void main(String[] args) {
-        Ariane6 ariane6 = new Ariane6("Ariane 6", 1000);
-        Ariane6Lancement ariane6Lancement = new Ariane6Lancement();
-        ariane6Lancement.lancer(ariane6);
+        Ariane6 ariane6 = new Ariane6("Ariane 6", 1000); // on initialise la fusee ariane6
+        Ariane6Lancement ariane6Lancement = new Ariane6Lancement(); // on initialise le lancement de la fusee ariane6
+        ariane6Lancement.lancer(ariane6); // on lance la fusee ariane6
     }
 }
 
