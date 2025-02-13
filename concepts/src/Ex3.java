@@ -1,10 +1,10 @@
 public class Ex3 {
         public static void main(String[] args) {
-            Employe directeur = new Directeur(); // on envoye un objet de type Directeur à la classe Employe
-            directeur.travailler(); // on appelle la méthode travailler() de Directeur
+            Employe directeur = new Directeur(); // on envoye un objet de type Directeur a la classe Employe
+            directeur.travailler(); // on appelle la methode travailler() de Directeur
     
-            Employe employe = new Enseignant();
-            employe.travailler();
+            Employe employe = new Enseignant(); // meme chose mais avec un objet de type Enseignant
+            employe.travailler(); // on appelle la methode travailler() d Enseignant
         }
 }
 // Files attached Employe, Directeur, Enseignant, PersonnelAdministratif
